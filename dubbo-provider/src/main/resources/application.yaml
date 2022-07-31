@@ -1,0 +1,18 @@
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    client: curator
+  config-center:
+    address: zookeeper://127.0.0.1:2181
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181
+  application:
+    name: provider
+  scan:
+    base-packages: ssx.service.impl
+
+server:
+  port: 8081
